@@ -14,10 +14,11 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        Desktop desktop = (Desktop)context.getBean("desktop", Desktop.class);
-//        Desktop desktop = (Desktop)context.getBean("computer2", Desktop.class);
-//        Desktop desktop = (Desktop)context.getBean("Beast", Desktop.class);
+        Desktop desktop = (Desktop)context.getBean(Desktop.class);
         desktop.compile();
+
+        Desktop desktop2 = (Desktop)context.getBean(Desktop.class);
+        desktop2.compile();
 
 
 //        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
