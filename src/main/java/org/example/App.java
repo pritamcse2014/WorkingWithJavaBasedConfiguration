@@ -14,7 +14,9 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        Desktop desktop = (Desktop)context.getBean("desktop");
+        Desktop desktop = (Desktop)context.getBean("desktop", Desktop.class);
+//        Desktop desktop = (Desktop)context.getBean("computer2", Desktop.class);
+//        Desktop desktop = (Desktop)context.getBean("Beast", Desktop.class);
         desktop.compile();
 
 
