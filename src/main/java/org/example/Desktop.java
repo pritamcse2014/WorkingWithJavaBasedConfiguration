@@ -1,8 +1,11 @@
 package org.example;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component("computer2")
+//@Component("computer2")
+@Component
+@Primary
 public class Desktop implements Computer {
 
     public Desktop() {

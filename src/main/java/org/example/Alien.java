@@ -11,8 +11,9 @@ public class Alien {
 
     private int age;
     @Autowired
+    @Qualifier("laptop")
 //    @Qualifier("laptop")
-    @Qualifier("computer2")
+//    @Qualifier("computer2")
     private Computer computer;
 
     public Alien() {
